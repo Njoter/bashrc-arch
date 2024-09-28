@@ -2,6 +2,7 @@
 # ~/.bashrc
 #
 
+# These files are located in $HOME/.bashrc.d/
 # Create a symlink to this file in $HOME
 
 # source files
