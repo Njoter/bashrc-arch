@@ -9,6 +9,9 @@ alias ls='lsd -lAh --color=auto --group-directories-first'
 alias ..="cd .."
 alias ...="cd ../.."
 
+# xdg-open
+alias open='xdg-open'
+
 # terminal
 alias cl='clear'
 
@@ -28,12 +31,9 @@ alias vimrc='vim ~/.vim/vimrc'
 
 # pacman
 alias pacup='sudo pacman -Syu --color "always"'
-alias parup='paru -Syu'
 alias pacstall='sudo pacman -S'
 alias pacrm='sudo pacman -Rns'
-alias parrm='paru -Rns'
 alias pacs='pacman -Ss'
-alias pars='paru -Ss'
 
 # session
 alias logout='pkill -u $USER'
@@ -47,3 +47,4 @@ alias randomcli='whatis $(\ls /usr/bin | shuf -n 1)'
 
 #System
 alias :q="shutdown now"
+alias space="df -h | grep /dev/nvme0n1p2"

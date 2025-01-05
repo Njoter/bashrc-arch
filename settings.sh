@@ -16,6 +16,7 @@ whatis $(\ls /usr/bin | shuf -n 1)
 export EDITOR=nvim
 export BROWSER=firefox
 export PATH="~/.cargo/bin:$PATH"
+export PATH="~/Documents/bash-scripts-wip:$PATH"
 
 # --------------- Misc settings ------------------------------------------
 
@@ -23,8 +24,8 @@ export PATH="~/.cargo/bin:$PATH"
 bind 'set completion-ignore-case on'
 
 # VI commands
-set -o vi
-bind 'set show-mode-in-prompt on'
+# set -o vi
+# bind 'set show-mode-in-prompt on'
 
 
 # --------------- Prompt ---------------------------------------------
