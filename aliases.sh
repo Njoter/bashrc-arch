@@ -4,6 +4,7 @@
 
 # ls
 alias ls='lsd -lAh --color=auto --group-directories-first'
+alias lsd='lsd -lh --color=auto --group-directories-first'
 
 # navigation
 alias ..="cd .."
@@ -28,6 +29,7 @@ alias vim='nvim'
 alias bashrc='vim ~/.bashrc'
 alias aweconfig='vim ~/.config/awesome/rc.lua'
 alias vimrc='vim ~/.vim/vimrc'
+alias swayconfig='vim ~/.config/sway/config'
 
 # pacman
 alias pacup='sudo pacman -Syu --color "always"'
@@ -47,4 +49,4 @@ alias randomcli='whatis $(\ls /usr/bin | shuf -n 1)'
 
 #System
 alias :q="shutdown now"
-alias space="df -h | grep /dev/nvme0n1p2"
+alias space="df -h | grep Filesystem; df -h | grep /dev/nvme0n1p2"

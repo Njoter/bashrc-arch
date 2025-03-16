@@ -14,7 +14,7 @@ whatis $(\ls /usr/bin | shuf -n 1)
 # --------------- Environment -------------------------------------------
 
 export EDITOR=nvim
-export BROWSER=firefox
+export BROWSER=zen
 export PATH="~/.cargo/bin:$PATH"
 export PATH="~/Documents/bash-scripts-wip:$PATH"
 
