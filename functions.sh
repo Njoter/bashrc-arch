@@ -7,17 +7,23 @@
 # === Detect package manager === #
 # ============================== #
 function detect_pkg_manager() {
-	if command -v apt > /dev/null 2>&1; then
+	if command -v apt-get >/dev/null 2>&1; then
 		echo "apt"
 	elif command -v pacman >/dev/null 2>&1; then
 		echo "pacman"
+    elif command -v dnf >/dev/null 2>&1; then
+        echo "dnf"
+    elif command -v zypper >/dev/null 2>&1; then
+        echo "zypper"
+    elif command -v apk >/dev/null 2>&1; then
+        echo "apk"
 	fi
 }
 
 # === Update packages === #
 # ======================= #
 function update_pkgs() {
-    case "$PKG_MANAGER" in
+    case $PKG_MANAGER in
         apt)    sudo apt update && sudo apt upgrade ;;
         pacman) sudo pacman -Syu ;;
         *)      echo "Package manager not supported by this function:
