@@ -1,6 +1,6 @@
 
 # ===================================================== #
-#			ALIASES 			#
+#			ALIASES 			                        #
 # ===================================================== #
 
 
@@ -15,6 +15,9 @@ alias ...="cd ../.."
 # === xdg-open === #
 alias open='xdg-open'
 
+# === launcher === #
+alias rofi='rofi -show drun -show-icons'
+
 # === terminal === #
 alias cl='clear'
 
@@ -27,19 +30,10 @@ alias find="find 2> /dev/null"
 # === vim === #
 alias vim='nvim'
 
-# === configs === #
-alias bashrc='vim ~/.bashrc'
-alias bshsettings='vim ~/.bashrc.d/settings.sh'
-alias bshaliases='vim ~/.bashrc.d/aliases.sh'
-alias bshfunctions='vim ~/.bashrc.d/functions.sh'
-alias vimrc='vim ~/.vim/vimrc'
-# alias aweconfig='vim ~/.config/awesome/rc.lua'
-# alias swayconfig='vim ~/.config/sway/config'
-
 # === package management === #
 alias install='install_pkg'
 alias update='update_pkgs'
-alias pkgsrch='search_for_pkg'
+alias pkgsearch='search_for_pkg'
 
 # === apt === #
 alias apt='nala'
@@ -53,6 +47,7 @@ alias cpulist='ps axac -o cmd:18,%cpu,pid --sort=-%cpu'
 
 # === fun stuff === #
 alias randomcli='whatis $(\ls /usr/bin | shuf -n 1)'
+alias weather='curl wttr.in/oslo'
 
 # === System === #
 alias :q="shutdown now"

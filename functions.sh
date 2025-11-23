@@ -70,6 +70,10 @@ function aptlist() {
     --layout=reverse
 }
 
+function paclist() {
+    pacman -Q | fzf --preview 'pacman -Qil {}' --layout=reverse
+}
+
 # === List scripts in /usr/local/bin with fzf and preview with bat === #
 # ==================================================================== #
 function scriptlist() {
